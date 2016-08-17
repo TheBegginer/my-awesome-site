@@ -837,7 +837,7 @@ hero {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  background: image-url("background-image.png");
+  background: image-url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png");
   background-position: right;
   background-size: none;
   display: -webkit-box;
@@ -951,3 +951,81 @@ hero {
     @media screen and (min-width: 600px) {
       .vertical-tabs-container .vertical-tab-accordion-heading {
         display: none; } }
+
+.cards {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto; }
+  .cards::after {
+    clear: both;
+    content: "";
+    display: block; }
+
+.card {
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  -webkit-box-shadow: 0 2px 4px #e6e6e6;
+          box-shadow: 0 2px 4px #e6e6e6;
+  cursor: pointer;
+  -webkit-flex-basis: 15em;
+      -ms-flex-preferred-size: 15em;
+          flex-basis: 15em;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin: 0 1em 1.5em 1em;
+  position: relative;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out; }
+  .card .card-image {
+    background-color: #F8F2B4;
+    height: 150px;
+    max-height: 150px;
+    overflow: hidden; }
+    .card .card-image img {
+      -webkit-border-top-left-radius: 3px;
+              border-top-left-radius: 3px;
+      -webkit-border-top-right-radius: 3px;
+              border-top-right-radius: 3px;
+      opacity: 1;
+      -webkit-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out;
+      width: 100%; }
+  .card .card-header {
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #ddd;
+    -webkit-border-radius: 3px 3px 0 0;
+            border-radius: 3px 3px 0 0;
+    font-weight: bold;
+    line-height: 1.5em;
+    padding: 0.5em 0.75em;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out; }
+  .card .card-copy {
+    font-size: 0.9em;
+    line-height: 1.5em;
+    padding: 0.75em 0.75em; }
+    .card .card-copy p {
+      margin: 0 0 0.75em; }
+  .card:focus, .card:hover {
+    cursor: pointer; }
+    .card:focus img, .card:hover img {
+      opacity: 0.7; }
+  .card:active {
+    background-color: #f7f7f7; }
+    .card:active .card-header {
+      background-color: #f7f7f7; }
