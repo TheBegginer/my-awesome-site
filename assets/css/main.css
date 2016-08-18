@@ -992,10 +992,21 @@ hero {
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out; }
   .card .card-image {
-    background-color: #F8F2B4;
     height: 150px;
     max-height: 150px;
-    overflow: hidden; }
+    overflow: hidden;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
     .card .card-image img {
       -webkit-border-top-left-radius: 3px;
               border-top-left-radius: 3px;
@@ -1004,7 +1015,8 @@ hero {
       opacity: 1;
       -webkit-transition: all 0.2s ease-in-out;
       transition: all 0.2s ease-in-out;
-      width: 100%; }
+      height: 100%;
+      left: 50%; }
   .card .card-header {
     background-color: #f7f7f7;
     border-bottom: 1px solid #ddd;

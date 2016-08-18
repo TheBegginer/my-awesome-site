@@ -33,16 +33,20 @@
   transition: all 0.2s ease-in-out;
 
   .card-image {
-    background-color: $card-image-hover-color;
     height: 150px;
     max-height: 150px;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     img {
       @include border-top-radius($base-border-radius);
       opacity: 1;
       transition: all 0.2s ease-in-out;
-      width: 100%;
+      //width: 100%;
+      height: 100%;
+      left: 50%;
     }
   }
 
