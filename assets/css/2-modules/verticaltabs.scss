@@ -35,7 +35,13 @@
   }
 
   .vertical-tabs {
-    
+    .logo-tab{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      max-height: $vertical-tabs-height / 8;
+    }
+
     display: none;
 
     @include media($vertical-tab-mode) {
