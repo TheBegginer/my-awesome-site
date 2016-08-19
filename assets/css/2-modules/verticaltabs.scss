@@ -14,7 +14,7 @@
   $tab-content-background: lighten($tab-border-color, 10%);
   $tab-active-color: $tab-content-background;
   $tab-inactive-color: $base-background-color;
-  $vertical-tabs-height: em(300);
+  $vertical-tabs-height: em(500);
   $vertical-tab-mode: $medium-screen;
 
   @include outer-container;
@@ -39,7 +39,9 @@
       display: block;
       margin-left: auto;
       margin-right: auto;
+      height: $vertical-tabs-height / 9;
       max-height: $vertical-tabs-height / 8;
+
     }
 
     display: none;
