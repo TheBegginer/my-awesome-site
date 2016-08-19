@@ -1,7 +1,7 @@
-hero {
+.hero {
   $large-screen: 50em !default;
   align-items: center;
-  background: image-url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png");
+  background: url("../img/heroimage.jpg");
   background-position: right;
   background-size: none;
   display: flex;
@@ -12,7 +12,7 @@ hero {
   @include media($large-screen) {
     background-position: left;
     background-size: cover;
-    justify-content: flex-end;
+    justify-content: center;
   }
 
   .hero-content {
@@ -20,7 +20,7 @@ hero {
     text-align: center;
 
     @include media($large-screen) {
-      text-align: left;
+      text-align: center;
     }
   }
 
