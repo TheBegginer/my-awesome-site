@@ -17,8 +17,6 @@
   $vertical-tabs-height: em(500);
   $vertical-tab-mode: $medium-screen;
 
-  @include outer-container;
-
   @include clearfix;
   border: $tab-border;
   border-radius: $tab-border-radius;
