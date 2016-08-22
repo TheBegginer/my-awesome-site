@@ -1275,7 +1275,8 @@ article.type-system-serif {
 .grid-class {
   max-width: 1200px;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  padding: 0 0 50px 0; }
   .grid-class::after {
     clear: both;
     content: "";
@@ -1346,7 +1347,7 @@ article.type-system-serif {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  padding: 50px 0; }
+  padding: 0 0 50px 0; }
   .vertical-tab-class::after {
     clear: both;
     content: "";
@@ -1360,7 +1361,17 @@ article.type-system-serif {
     .vertical-tab-class .vertical-tabs-container:last-child {
       margin-right: 0; }
 
+.hero {
+  padding-bottom: 50px; }
+
 .hero-logo {
   -webkit-border-radius: 50%;
           border-radius: 50%;
-  height: 200px; }
+  height: 50px; }
+
+.tumbnail {
+  display: block;
+  height: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px; }

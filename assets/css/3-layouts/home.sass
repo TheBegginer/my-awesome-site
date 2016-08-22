@@ -4,13 +4,15 @@
 
 .grid-class
   +outer-container
+  padding: 0 0 50px 0
+
 .type-system-serif
   +span-columns(6)
+
 .grid-items-lines
   +span-columns(6)
   a
     .hover-tile-outer
-
       &.devtips
         background: url("../img/logo-devtips.png")
         background-repeat: no-repeat
@@ -59,12 +61,21 @@
 
 .vertical-tab-class
   +outer-container
-  padding: 50px 0
+  padding: 0 0 50px 0
   .vertical-tabs-container
     +span-columns(10)
     +shift(1)
 
+.hero
+  padding-bottom: 50px
+
 .hero-logo
   border-radius: 50%
-  height: 200px
-  
+  height: 50px
+
+.tumbnail
+  display: block
+  height: 150px
+  margin-left: auto
+  margin-right: auto
+  margin-bottom: 20px
