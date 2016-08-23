@@ -79,3 +79,22 @@
   margin-left: auto
   margin-right: auto
   margin-bottom: 20px
+
+@media (max-width: $large-screen)
+  .type-system-serif
+    +span-columns(12)
+
+  .grid-items-lines
+    +span-columns(12)
+
+  .vertical-tab-class
+    .vertical-tabs-container
+      +span-columns(12)
+      +shift(0)
+      .vertical-tab
+        .logo-tab
+          height: em(500) / 12
+  .cards-class
+    .cards
+      +span-columns(8)
+      +shift(2)
