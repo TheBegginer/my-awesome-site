@@ -1405,7 +1405,10 @@ article.type-system-serif {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 65.88078%;
-    margin-left: 17.05961%; }
+    width: 82.94039%;
+    margin-left: 8.5298%; }
     .cards-class .cards:last-child {
       margin-right: 0; } }
+
+.tumbnail:hover {
+  border: 2px solid #ccc; }
